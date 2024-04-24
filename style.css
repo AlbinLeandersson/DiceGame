@@ -207,3 +207,21 @@ p, h2{
     -webkit-box-shadow: -1px -1px 15px rgb(40, 87, 35), 1px 1px 15px rgb(37, 148, 23),
           inset 5px 5px 5px #212121, inset -5px -5px 5px #212121;
   }
+
+  .restart:hover {
+    -webkit-box-shadow: -1px -1px 15px rgb(40, 87, 35), 1px 1px 15px rgb(37, 148, 23),
+    inset 5px 5px 5px #212121, inset -5px -5px 5px #212121;
+    color: #d6d6d6;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    scale: 1.05;
+}
+
+.exit:hover {
+    -webkit-box-shadow: -1px -1px 15px rgb(40, 87, 35), 1px 1px 15px rgb(37, 148, 23),
+    inset 5px 5px 5px #212121, inset -5px -5px 5px #212121;
+    color: #d6d6d6;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    scale: 1.05;
+}
