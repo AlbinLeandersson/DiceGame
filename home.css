@@ -1,0 +1,39 @@
+@import url('https://fonts.cdnfonts.com/css/matrix');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    font-family: 'Matrix', sans-serif;
+}
+
+.header, .frontMaker {
+    color : rgb(0, 255, 0);
+    text-align: center;
+    margin-top : 10px;
+    font-size: 32px;
+    text-shadow: rgb(23, 210, 23) 10px 5px 7px;
+    -webkit-text-shadow: 1px 1px 13px rgb(10, 64, 10), -1px -1px 33px rgb(37, 148, 23);
+    text-shadow: 1px 1px 13px rgb(10, 64, 10), -1px -1px 33px rgb(37, 148, 23);
+}
+
+canvas {
+    width: 100%;
+}
+
+.frontMaker{
+    position: absolute;
+    left: 39%;
+    top: 40%;
+}
+
+.play {
+    color: rgb(0, 255, 0);
+    background-color: black;
+    width: 30%;
+    height: 40%;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
