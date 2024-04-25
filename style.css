@@ -101,7 +101,7 @@ body {
 
 .roll:hover {
   -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
-  box-shadow: 1px 1px 13px #bf1f1a, -1px -1px 13px #b5453b;
+  box-shadow: 1px 1px 13px #1a82bf, -1px -1px 13px #548ac0;
   color: #d6d6d6;
   -webkit-transition: 500ms;
   transition: 500ms;
@@ -110,7 +110,7 @@ body {
 
 .cash:hover {
   -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
-  box-shadow: 1px 1px 13px #1a82bf, -1px -1px 13px #548ac0;
+  box-shadow: 1px 1px 13px #bf1f1a, -1px -1px 13px #b5453b;
   color: #d6d6d6;
   -webkit-transition: 500ms;
   transition: 500ms;

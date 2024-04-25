@@ -3,6 +3,8 @@ let current_player = 0; // 0 for player_1, 1 for player_2
 let current_roll_value = 0; // Value of current roll for the current player
 let player_1_div = document.getElementsByClassName("player1")[0]; // Div for player 1
 let player_2_div = document.getElementsByClassName("player2")[0]; // Div for player 1
+player_1_div.style.boxShadow = "rgb(0, 255, 0)";
+player_2_div.style.boxShadow = "none";
 
 function roll_dice(player) {
     if (player !== current_player + 1) return; // Ensure it's the current player's turn
