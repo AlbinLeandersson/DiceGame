@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dice Game</title>
+  <title>Matrix Dice Game</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.cdnfonts.com/css/matrix" rel="stylesheet">
 </head>
+
 <body class="bg">
-<div>
+  <div>
     <div class="header">
-        <h1>DICE ROLL</h1>
+      <h1>DICE ROLL</h1>
     </div>
-  <div class="container">
-    <div class="player1" id="player_1">
-      <h2>PLAYER 1</h2>
-      <p>SCORE: <span id="score_1">0</span></p>
-      <p>TOTAL SCORE: <span id="total_score_1">0</span></p>
-      <p>CURRENT ROLL: <span id="current_roll_1">-</span></p>
-      <button class="roll" onclick="roll_dice(1)">ROLL DICE</button>
-      <button class="cash" onclick="cash_in(1)">CASH IN</button>
-    </div>
-    <div>
-      <button class="exit" onclick="goToHomePage()">EXIT</button>
-      <button class="restart" onclick="restartGame()">RESTART</button>
-    </div>
-    <div class="player2" id="player_2">
-      <h2>PLAYER 2</h2>
-      <p>SCORE: <span id="score_2">0</span></p>
-      <p>TOTAL SCORE: <span id="total_score_2">0</span></p>
-      <p>CURRENT ROLL: <span id="current_roll_2">-</span></p>
-      <button class="roll" onclick="roll_dice(2)">ROLL DICE</button>
-      <button class="cash" onclick="cash_in(2)">CASH IN</button>
+    <div class="container">
+      <div class="player1" id="player_1">
+        <h2>PLAYER 1</h2>
+        <p>SCORE: <span id="score_1">0</span></p>
+        <p>TOTAL SCORE: <span id="total_score_1">0</span></p>
+        <p>CURRENT ROLL: <span id="current_roll_1">-</span></p>
+        <button class="roll" onclick="roll_dice(1)">ROLL DICE</button>
+        <button class="cash" onclick="cash_in(1)">CASH IN</button>
+      </div>
+      <div>
+        <button class="exit" onclick="goToHomePage()">EXIT THE MATRIX</button>
+        <button class="restart" onclick="restartGame()">RESTART</button>
+      </div>
+      <div class="player2" id="player_2">
+        <h2>PLAYER 2</h2>
+        <p>SCORE: <span id="score_2">0</span></p>
+        <p>TOTAL SCORE: <span id="total_score_2">0</span></p>
+        <p>CURRENT ROLL: <span id="current_roll_2">-</span></p>
+        <button class="roll" onclick="roll_dice(2)">ROLL DICE</button>
+        <button class="cash" onclick="cash_in(2)">CASH IN</button>
+      </div>
     </div>
   </div>
-</div>
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>

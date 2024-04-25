@@ -10,21 +10,21 @@ canvas.height = H;
 var fontSize = 13;
 var columns = Math.floor(W / fontSize);
 var drops = [];
-for(var i=0; i<columns; i++){
+for (var i = 0; i < columns; i++) {
     drops.push(0);
 }
 var str = "JavaScript Hacking Effect";
-function draw(){
+function draw() {
     context.fillStyle = "rgba(0,9,0,0.06)";
     context.fillRect(0, 0, W, H);
     context.fontSize = "700 " + fontSize + "px";
     context.fillStyle = "#aabb44";
-    for(var i=0; i<columns; i++){
-        var index = Math.floor(Math.random()*str.length);
+    for (var i = 0; i < columns; i++) {
+        var index = Math.floor(Math.random() * str.length);
         var x = i * fontSize;
         var y = drops[i] * fontSize;
         context.fillText(str[index], x, y);
-        if(y >= canvas.height && Math.random() > 0.99){
+        if (y >= canvas.height && Math.random() > 0.99) {
             drops[i] = 0;
         }
         drops[i]++;
