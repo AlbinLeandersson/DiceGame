@@ -72,8 +72,8 @@ function restartGame() {
     document.getElementById('current_roll_2').textContent = '-';
 
     // Reset player styles
-    player_1_div.style.boxShadow = "none";
-    player_1_div.style.scale = "1";
+    player_1_div.style.boxShadow = "0px 0px 10px rgba(0, 255, 0)";
+    player_1_div.style.scale = "1.05";
     player_2_div.style.boxShadow = "none";
     player_2_div.style.scale = "1";
 }

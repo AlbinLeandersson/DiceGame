@@ -52,3 +52,28 @@ canvas {
     transition: 500ms;
     scale: 1.05;
 }
+
+.info {
+    color: rgb(0, 255, 0);
+    background-color: rgb(26, 23, 23);
+    width: 40%;
+    height: 40%;
+    padding: 20px 20px;
+    font-size: 24px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 255, 0);
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 5px rgb(40, 87, 35), 0px 0px 5px rgb(37, 148, 23),
+        inset 5px 5px 5px #46a52e, inset -5px -5px 5px rgb(69, 150, 49);
+    text-shadow: rgb(23, 210, 23) 10px 5px 7px;
+    -webkit-text-shadow: 1px 1px 13px rgb(10, 64, 10), -1px -1px 33px rgb(37, 148, 23);
+    text-shadow: 1px 1px 13px rgb(10, 64, 10), -1px -1px 33px rgb(37, 148, 23);
+}
+
+.info:hover {
+    color: #d6d6d6;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    scale: 1.05;
+}
