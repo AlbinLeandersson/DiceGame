@@ -29,8 +29,8 @@ canvas {
 /* Front maker positioning */ /*Albin Leandersson*/
 .frontMaker {
     position: absolute;
-    left: 39%;
     top: 40%;
+    left: 40%;
 }
 
 /* Play button styles */ /*Albin Leandersson*/
