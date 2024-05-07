@@ -33,6 +33,10 @@ function cash_in(player) {
     const current_roll_display = document.getElementById(`current_roll_${player}`);
 
     scores[player - 1] += parseInt(score_display.textContent); // Add total roll value to total score
+
+    // Win check
+    winCheck(player);
+
     score_display.textContent = '0'; // Reset player's score display for this roll
     total_score_display.textContent = scores[player - 1]; // Update player's total score
     current_roll_display.textContent = '-'; // Reset current roll display
@@ -78,6 +82,17 @@ function restartGame() {
     player_1_div.style.scale = "1.05";
     player_2_div.style.boxShadow = "none";
     player_2_div.style.scale = "1";
+}
+
+function winCheck(player) {
+    // Check if won.
+    if (scores[player-1] >= 10) {
+        alert(`Player ${player} has Won!`);
+        window.location.reload();
+    }
+
+    var showWin = document.getElementsByClassName("winContainer")[0];
+    showWin.style.display = "flex";
 }
 
 function goToHomePage() {
