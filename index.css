@@ -62,10 +62,8 @@ canvas {
     margin-top: 20px;
     border-radius: 10px;
     border: solid #af1a1a 1px;
+    cursor: pointer;
     color: rgb(255, 0, 0);
-    -webkit-transition: 500ms;
-    transition: 500ms;
-    border-radius: 5px;
     background: linear-gradient(90deg, #212121, #383636);
     -webkit-box-shadow: 0px 0px 5px rgb(87, 35, 35), 0px 0px 5px rgb(148, 23, 23),
         inset 5px 5px 5px #a52e2e, inset -5px -5px 5px rgb(150, 49, 49);

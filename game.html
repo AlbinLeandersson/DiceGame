@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Title -->
+  <title>Matrix Dice Game</title>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.cdnfonts.com/css/matrix" rel="stylesheet">
+</head>
+
+<body class="bg">
+  <!-- Game interface -->
+  <div>
+    <div class="header">
+      <h1>DICE ROLL</h1>
+    </div>
+    <div class="container">
+      <!-- Player 1 -->
+      <div class="player1" id="player_1">
+        <h2>PLAYER 1</h2>
+        <p>SCORE: <span id="score_1">0</span></p>
+        <p>TOTAL SCORE: <span id="total_score_1">0</span></p>
+        <p>CURRENT ROLL: <span id="current_roll_1">-</span></p>
+        <button class="roll" onclick="roll_dice(1)">ROLL DICE</button>
+        <button class="cash" onclick="cash_in(1)">CASH IN</button>
+      </div>
+      
+      <!-- Exit and Restart buttons -->
+      <div>
+        <button class="exit" onclick="goToHomePage()">EXIT THE MATRIX</button>
+        <button class="restart" onclick="restartGame()">RESTART</button>
+      </div>
+      
+      <!-- Player 2 -->
+      <div class="player2" id="player_2">
+        <h2>PLAYER 2</h2>
+        <p>SCORE: <span id="score_2">0</span></p>
+        <p>TOTAL SCORE: <span id="total_score_2">0</span></p>
+        <p>CURRENT ROLL: <span id="current_roll_2">-</span></p>
+        <button class="roll" onclick="roll_dice(2)">ROLL DICE</button>
+        <button class="cash" onclick="cash_in(2)">CASH IN</button>
+      </div>
+      
+      <!-- Win container (hidden by default) -->
+      <div class="winContainer" style="display: none;">
+        <h2 class="winText">Placeholder Win Text!</h2>
+        <button class="exit" onclick="goToHomePage()">EXIT THE MATRIX</button>
+        <button class="restart" onclick="restartGameWin()">RESTART</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript file -->
+  <script src="script.js"></script>
+</body>
+
+</html>

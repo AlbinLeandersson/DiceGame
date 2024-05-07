@@ -2,50 +2,29 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matrix Dice Game</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.cdnfonts.com/css/matrix" rel="stylesheet">
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Dice Game</title>
+    <!-- Matrix font -->
+    <link href="https://fonts.cdnfonts.com/css/matrix" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="index.css">
 </head>
 
-<body class="bg">
-  <div>
-    <div class="header">
-      <h1>DICE ROLL</h1>
+<body>
+    <!-- Front maker -->
+    <div class="frontMaker">
+        <h1 class="header">MATRIX DICE GAME</h1>
+        <!-- Play and info buttons -->
+        <button onclick="window.location.href = 'game.html'" class="play">PLAY GAME</button>
+        <button onclick="window.location.href = 'info.html'" class="info">GAME INFO</button>
     </div>
-    <div class="container">
-      <div class="player1" id="player_1">
-        <h2>PLAYER 1</h2>
-        <p>SCORE: <span id="score_1">0</span></p>
-        <p>TOTAL SCORE: <span id="total_score_1">0</span></p>
-        <p>CURRENT ROLL: <span id="current_roll_1">-</span></p>
-        <button class="roll" onclick="roll_dice(1)">ROLL DICE</button>
-        <button class="cash" onclick="cash_in(1)">CASH IN</button>
-      </div>
-      <div>
-        <button class="exit" onclick="goToHomePage()">EXIT THE MATRIX</button>
-        <button class="restart" onclick="restartGame()">RESTART</button>
-      </div>
-      <div class="player2" id="player_2">
-        <h2>PLAYER 2</h2>
-        <p>SCORE: <span id="score_2">0</span></p>
-        <p>TOTAL SCORE: <span id="total_score_2">0</span></p>
-        <p>CURRENT ROLL: <span id="current_roll_2">-</span></p>
-        <button class="roll" onclick="roll_dice(2)">ROLL DICE</button>
-        <button class="cash" onclick="cash_in(2)">CASH IN</button>
-      </div>
-    </div>
-  </div>
 
-  <div class="winContainer" style="display: none;">
-    <h2 class="winText">Placeholder Win Text!</h2>
-
-    <button class="exit" onclick="goToHomePage()">EXIT THE MATRIX</button>
-    <button class="restart" onclick="restartGame()">RESTART</button>
-  </div>
-
-  <script src="script.js"></script>
+    <!-- Matrix-style canvas -->
+    <canvas id="canvas" style="background: #111;"></canvas>
+    <!-- JavaScript file -->
+    <script src="index.js"></script>
 </body>
 
 </html>

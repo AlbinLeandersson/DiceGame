@@ -1,5 +1,7 @@
+/* Import Matrix font */ /* Albin Leandersson */
 @import url('https://fonts.cdnfonts.com/css/matrix');
 
+/* Global styles */ /* Albin Leandersson */
 * {
   margin: 0%;
   padding: 0%;
@@ -7,10 +9,12 @@
   font-family: 'Matrix', sans-serif;
 }
 
+/* Albin Leandersson */
 body {
   background-color: #212121;
 }
 
+/* Game container styles */ /* Albin Leandersson */
 .container {
   display: flex;
   flex-direction: column;
@@ -19,6 +23,7 @@ body {
   height: 90vh;
 }
 
+/* Player and info box styles */ /* Albin Leandersson */
 .player1,
 .player2,
 .info-box {
@@ -37,22 +42,7 @@ body {
     inset 5px 5px 5px #212121, inset -5px -5px 5px #212121;
 }
 
-.player2 {
-  display: inline-block;
-  margin: 20px;
-  padding: 30px;
-  padding-bottom: 20px;
-  border: 2px solid black;
-  background-color: #191a1a;
-  border: solid rgb(40, 87, 35) 1px;
-  -webkit-transition: 500ms;
-  transition: 500ms;
-  border-radius: 5px;
-  background: linear-gradient(90deg, #212121, #383636);
-  -webkit-box-shadow: -1px -1px 15px rgb(40, 87, 35), 1px 1px 15px rgb(37, 148, 23),
-    inset 5px 5px 5px #212121, inset -5px -5px 5px #212121;
-}
-
+/* Roll button styles */ /* Albin Leandersson */
 .roll {
   height: 60px;
   margin: 20px;
@@ -76,6 +66,7 @@ body {
     inset 5px 5px 5px #212121, inset -5px -5px 5px #212121;
 }
 
+/* Cash button styles */ /* Albin Leandersson */
 .cash {
   height: 60px;
   margin: 20px;
@@ -99,6 +90,7 @@ body {
     inset 5px 5px 5px #212121, inset -5px -5px 5px #212121;
 }
 
+/* Roll button hover styles */ /* Albin Leandersson */
 .roll:hover {
   -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
   box-shadow: 1px 1px 13px #1a82bf, -1px -1px 13px #548ac0;
@@ -108,6 +100,7 @@ body {
   scale: 1.05;
 }
 
+/* Cash button hover styles */ /* Albin Leandersson */
 .cash:hover {
   -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
   box-shadow: 1px 1px 13px #bf1f1a, -1px -1px 13px #b5453b;
@@ -117,12 +110,14 @@ body {
   scale: 1.05;
 }
 
+/* Button activated style *//* Albin Leandersson */
 button:active {
   color: #d6d6d6;
   -webkit-transition: 100ms;
   transition: 100ms;
 }
 
+/* Header styles */ /* Albin Leandersson */
 .header {
   color: rgb(0, 255, 0);
   text-align: center;
@@ -133,6 +128,7 @@ button:active {
   text-shadow: 1px 1px 13px rgb(10, 64, 10), -1px -1px 33px rgb(37, 148, 23);
 }
 
+/* Text styles */ /* Albin Leandersson */
 p,
 h2 {
   color: rgb(0, 255, 0);
@@ -142,6 +138,7 @@ h2 {
   text-align: center;
 }
 
+/* Background animation */ /* Arda */
 .bg {
   width: 100%;
   height: 100%;
@@ -170,6 +167,7 @@ h2 {
   background-size: 55px 55px;
 }
 
+/* Exit button styles */ /* Albin Leandersson */
 .exit {
   height: 60px;
   margin: 20px;
@@ -187,6 +185,7 @@ h2 {
     inset 5px 5px 5px #212121, inset -5px -5px 5px #212121;
 }
 
+/* Restart button styles */ /* Albin Leandersson */
 .restart {
   height: 60px;
   margin: 20px;
@@ -204,6 +203,7 @@ h2 {
     inset 5px 5px 5px #212121, inset -5px -5px 5px #212121;
 }
 
+/* Restart button hover styles */ /* Albin Leandersson */
 .restart:hover {
   -webkit-box-shadow: -1px -1px 15px rgb(40, 87, 35), 1px 1px 15px rgb(37, 148, 23),
     inset 5px 5px 5px #212121, inset -5px -5px 5px #212121;
@@ -213,6 +213,7 @@ h2 {
   scale: 1.05;
 }
 
+/* Exit button hover styles */ /* Albin Leandersson */
 .exit:hover {
   -webkit-box-shadow: -1px -1px 15px rgb(40, 87, 35), 1px 1px 15px rgb(37, 148, 23),
     inset 5px 5px 5px #212121, inset -5px -5px 5px #212121;
@@ -222,15 +223,32 @@ h2 {
   scale: 1.05;
 }
 
+/* Info Header styles */ /* Albin Leandersson */
 .info-header {
   text-align: center;
   margin: 20px;
 }
 
+/* Gameinfo styles *//* Albin Leandersson */
 .game-info {
   text-align: center;
   color: rgb(0, 255, 0);
   text-shadow: rgb(9, 28, 9) 10px 5px 7px;
   -webkit-text-shadow: 1px 1px 13px rgb(14, 41, 14), -1px -1px 33px rgb(20, 68, 14);
   text-shadow: 1px 1px 13px rgb(10, 64, 10), -1px -1px 33px rgb(15, 49, 11);
+}
+
+/* Win container styles */ /* Albin Leandersson */
+.winContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  padding: 30px;
+  background-color: #191a1a;
+  border: solid rgb(40, 87, 35) 1px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #212121, #383636);
+  -webkit-box-shadow: -1px -1px 15px rgb(40, 87, 35), 1px 1px 15px rgb(37, 148, 23),
+    inset 5px 5px 5px #212121, inset -5px -5px 5px #212121;
 }
