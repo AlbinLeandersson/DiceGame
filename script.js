@@ -90,7 +90,7 @@ function restartGame() {
 
 function winCheck(player) {
     // Check if won.
-    if (scores[player-1] >= 10) {
+    if (scores[player-1] >= 100) {
         const winTextElement = document.querySelector('.winText'); // Select the element with class 'winText'
         
         // Update the innerHTML of the winTextElement to display the win message
