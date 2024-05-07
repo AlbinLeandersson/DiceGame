@@ -1,5 +1,7 @@
+/* Import Matrix font */ /*Albin Leandersson*/
 @import url('https://fonts.cdnfonts.com/css/matrix');
 
+/* Global styles */ /*Albin Leandersson*/
 * {
     margin: 0%;
     padding: 0%;
@@ -7,6 +9,7 @@
     font-family: 'Matrix', sans-serif;
 }
 
+/* Header and front maker styles */ /*Albin Leandersson*/
 .header,
 .frontMaker {
     color: rgb(0, 255, 0);
@@ -18,16 +21,19 @@
     text-shadow: 1px 1px 13px rgb(10, 64, 10), -1px -1px 33px rgb(37, 148, 23);
 }
 
+/* Canvas styles */ /*Albin Leandersson*/
 canvas {
     width: 100%;
 }
 
+/* Front maker positioning */ /*Albin Leandersson*/
 .frontMaker {
     position: absolute;
     left: 39%;
     top: 40%;
 }
 
+/* Play button styles */ /*Albin Leandersson*/
 .play {
     color: rgb(0, 166, 255);
     background-color: rgb(26, 23, 23);
@@ -46,6 +52,7 @@ canvas {
     text-shadow: 1px 1px 13px rgb(10, 44, 64), -1px -1px 33px rgb(23, 90, 148);
 }
 
+/* Play button hover styles */ /*Albin Leandersson*/
 .play:hover {
     color: #d6d6d6;
     -webkit-transition: 500ms;
@@ -53,6 +60,7 @@ canvas {
     scale: 1.05;
 }
 
+/* Info button styles */ /*Albin Leandersson*/
 .info {
     background-color: rgb(26, 23, 23);
     width: 40%;
@@ -72,6 +80,7 @@ canvas {
     text-shadow: 1px 1px 13px rgb(64, 10, 10), -1px -1px 33px rgb(148, 23, 23);
 }
 
+/* Info button hover styles */ /*Albin Leandersson*/
 .info:hover {
     color: #d6d6d6;
     -webkit-transition: 500ms;

@@ -1,3 +1,5 @@
+// Code made by Albin Leandersson
+
 let scores = [0, 0]; // player_1_score and player_2_score
 let current_player = 0; // 0 for player_1, 1 for player_2
 let current_roll_value = 0; // Value of current roll for the current player

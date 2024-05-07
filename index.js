@@ -1,4 +1,6 @@
-// MATRIX GREJEN
+// Code made by Zejd Avdic and modified by ALbin Leandersson
+
+// MATRIX text effect on canvas
 var canvas = document.getElementById('canvas');
 var context = canvas.getContext('2d');
 var W = window.innerWidth;
